@@ -44,6 +44,8 @@ When the parent logic app (RecurrMove) recursively runs every given time interva
 
 # 4.	Use the Azure data factory to create pipeline from Amazon S3 to Azure Storage.
 
-
 Create a data factory with all the appropriate data and configurations. We can also make it as recurrence to run it for any time intervals.
 
+![Picture1](https://user-images.githubusercontent.com/20348809/102540483-19085c00-407d-11eb-8051-1b0da49a4417.png)
+
+Once the data factory is created and run, it pulls the data from the S3 bucket and stores in the input container. The Azure function will unzip the file and move it to a different output container. The logic app MoveData will check the input container and move the files to the archive container. 
