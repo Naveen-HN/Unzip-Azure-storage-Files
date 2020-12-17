@@ -25,6 +25,8 @@ Then use For each, within for each, you need to use Get blob content using path 
 
 Add a Delete blob action
 
+![Picture1](https://user-images.githubusercontent.com/20348809/102539940-56b8b500-407c-11eb-8135-709438a929f2.png)
+
 We want to automate this process so that everytime a file is present in the input container, it should be moved to the archive folder. We cannot use a recurrence for a trigger, so create another Logic app (RecurrMove)  with a Time recurrence which calls this Logic App ‘Move Data’ for every given intervals of time.
 
 
