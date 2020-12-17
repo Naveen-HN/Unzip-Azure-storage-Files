@@ -34,3 +34,9 @@ We want to automate this process so that everytime a file is present in the inpu
 
 Use the recurrence of the required interval periods. The second step is the logic app which is called ‘MoveData’.
 
+![Picture1](https://user-images.githubusercontent.com/20348809/102540122-9384ac00-407c-11eb-8336-3482a13afdb7.png)
+
+Note: All the logic apps must be in the same location as the containers.
+
+When the parent logic app (RecurrMove) recursively runs every given time interval, it fails in the logs. That is due to the absence of response data in the child Logic App (MoveData). It should be fine and the child Logic App (MoveData) runs successfully.
+
