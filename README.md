@@ -17,6 +17,6 @@ When the function is deployed, it unzips the file whenever a file is uploaded to
 
 This is the logic app design to move the original files to the archive container
 
-
+![Picture1](https://user-images.githubusercontent.com/20348809/102539188-5a980780-407b-11eb-86a6-f0b4709e4999.png)
 
 Then use For each, within for each, you need to use Get blob content using path and Create blob.
