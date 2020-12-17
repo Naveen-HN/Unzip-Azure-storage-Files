@@ -40,3 +40,10 @@ Note: All the logic apps must be in the same location as the containers.
 
 When the parent logic app (RecurrMove) recursively runs every given time interval, it fails in the logs. That is due to the absence of response data in the child Logic App (MoveData). It should be fine and the child Logic App (MoveData) runs successfully.
 
+![Picture1](https://user-images.githubusercontent.com/20348809/102540257-c333b400-407c-11eb-8b5c-5e5f882b9571.png)
+
+# 4.	Use the Azure data factory to create pipeline from Amazon S3 to Azure Storage.
+
+
+Create a data factory with all the appropriate data and configurations. We can also make it as recurrence to run it for any time intervals.
+
