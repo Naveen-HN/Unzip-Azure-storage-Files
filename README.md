@@ -20,3 +20,5 @@ This is the logic app design to move the original files to the archive container
 ![Picture1](https://user-images.githubusercontent.com/20348809/102539188-5a980780-407b-11eb-86a6-f0b4709e4999.png)
 
 Then use For each, within for each, you need to use Get blob content using path and Create blob.
+
+![Picture1](https://user-images.githubusercontent.com/20348809/102539566-d85c1300-407b-11eb-9a2e-cd59bdba073e.png)
