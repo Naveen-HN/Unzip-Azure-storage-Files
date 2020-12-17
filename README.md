@@ -22,3 +22,13 @@ This is the logic app design to move the original files to the archive container
 Then use For each, within for each, you need to use Get blob content using path and Create blob.
 
 ![Picture1](https://user-images.githubusercontent.com/20348809/102539566-d85c1300-407b-11eb-9a2e-cd59bdba073e.png)
+
+Add a Delete blob action
+
+We want to automate this process so that everytime a file is present in the input container, it should be moved to the archive folder. We cannot use a recurrence for a trigger, so create another Logic app (RecurrMove)  with a Time recurrence which calls this Logic App ‘Move Data’ for every given intervals of time.
+
+
+# 3.	Create a logic App (RecurrMove) which calls the MoveData Logic App.
+
+Use the recurrence of the required interval periods. The second step is the logic app which is called ‘MoveData’.
+
